@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 id="title">Formulário de Cadastramento </h1>
+
+<p id="description">Vagas de Emprego.</p>
+
+<form id="survey-form">
+    <label for="name" id="name-label">Nome:</label>
+    <input type="text" id="name" name="name" placeholder="Seu nome" required><br><br>
+
+    <label for="email" id="email-label">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="Seu e-mail" required><br><br>
+
+    <label for="number" id="number-label">Número:</label>
+    <input type="number" id="number" name="number" placeholder="Número" min="1" max="100" required><br><br>
+
+    <label for="dropdown">Nível de Escolaridade:</label>
+    <select id="dropdown" name="dropdown" required>
+        <option value="option1">Ensino Fundamental</option>
+        <option value="option2">Ensino Médio</option>
+        <option value="option3">Ensino Superior</option>
+        <option value="option4">Mestrado</option>
+        <option value="option5">Doutorado</option>
+        
+    </select><br><br>
+
+    <fieldset>
+        <legend>Sexo:</legend>
+        <label><input type="radio" name="radio-group" value="lala"> Feminino</label>
+        <label><input type="radio" name="radio-group" value="option2"> Masculino</label>
+        <label><input type="radio" name="radio-group" value="option3"> Outro</label>
+    </fieldset><br>
+
+    <label>Tenho mais interesse em:</label><br>
+    <label><input type="checkbox" name="checkbox1" value="value1"> Administracao e gestao</label><br>
+    <label><input type="checkbox" name="checkbox1" value="value1"> Vendas e Marketing</label><br>
+    <label><input type="checkbox" name="checkbox1" value="value1"> Finanças e Contabilidade</label><br>
+    <label><input type="checkbox" name="checkbox1" value="value1">  Tecnologia</label><br>
+    <label><input type="checkbox" name="checkbox1" value="value1">  Recursos Humanos</label><br>
+    <label><input type="checkbox" name="checkbox2" value="value2"> Saúde e bem-estar</label><br><br>
+    
+    
+
+    <label for="comments">Conte-me um pouco sobre você.</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Digite aqui..."></textarea><br><br>
+
+    <button type="submit" id="submit">Enviar</button>
+</form>
+
+</body>
+</html>
